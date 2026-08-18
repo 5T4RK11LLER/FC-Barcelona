@@ -33,27 +33,6 @@
     border-image: linear-gradient(to right, #A50044, #004D98) 1;
 }
 
-@supports (animation-timeline: scroll()) {
-    .navbar{
-        background-color: transparent;
-        animation: navbar-bg linear;
-        animation-timeline: scroll(root);
-        animation-range: 0 200px;
-    }
-}
-
-@keyframes navbar-bg {
-    from {
-        background-color: transparent;
-        box-shadow: none;
-    }
-    to {
-        background-color: #070E21;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-}
-
-
 .navbar-toggler {
     border: 2px solid transparent;
     border-radius: 0.5rem;
@@ -158,7 +137,7 @@
 }
 
 #team_title{
-    font-size: 4.5;
+    font-size: 4.5rem;
     background: linear-gradient(to right, #A50044, #004D98);
     background-clip: text;
     -webkit-background-clip: text;
@@ -186,6 +165,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 15%;
     display: block;
 }
  
@@ -319,4 +299,202 @@ footer {
   .footer-items {
     font-size: 0.8rem;
   }
+}
+
+/* ===== Responsive: large screens with narrower cards ===== */
+@media (min-width: 1200px) {
+    #team .card{
+        height: 380px;
+    }
+
+    #team .card-title{
+        font-size: 6rem;
+    }
+
+    #team .card-text{
+        font-size: 1.4rem;
+    }
+
+    #team .card-text span{
+        font-size: 2.25rem;
+    }
+}
+
+/* ===== Responsive: tablets (<=991.98px) ===== */
+@media (max-width: 991.98px) {
+    #hero-section h1{
+        font-size: 4.5rem !important;
+    }
+
+    #hero-section p{
+        font-size: 1.25rem !important;
+        padding: 0 1rem;
+    }
+
+    #team_title{
+        font-size: 3.5rem;
+    }
+
+    #team h2{
+        font-size: 3rem;
+    }
+
+    #moments_title h2{
+        font-size: 3.5rem;
+    }
+
+    #moments_title p{
+        font-size: 1.5rem;
+    }
+
+    #team .card-title{
+        font-size: 6rem;
+    }
+
+    #team .card-text{
+        font-size: 1.4rem;
+    }
+
+    #team .card-text span{
+        font-size: 2.25rem;
+    }
+}
+
+/* ===== Responsive: mobile (<=767.98px) ===== */
+@media (max-width: 767.98px) {
+    #hero-container{
+        min-height: 80vh;
+    }
+
+    #hero-section h1{
+        font-size: 2.75rem !important;
+        margin-bottom: 12px;
+    }
+
+    #hero-section p{
+        font-size: 1rem !important;
+        max-width: 90%;
+    }
+
+    #team{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #team_title{
+        font-size: 2.25rem;
+    }
+
+    #team h2{
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #team .card{
+        height: 260px;
+    }
+
+    #team .card-body{
+        padding: 1.25rem 0.5rem 0.5rem;
+    }
+
+    #team .card-title{
+        font-size: 3rem;
+    }
+
+    #team .card-text{
+        font-size: 0.95rem;
+    }
+
+    #team .card-text span{
+        font-size: 1.15rem;
+    }
+
+    #moments_title{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #moments_title h2{
+        font-size: 2.25rem;
+    }
+
+    #moments_title p{
+        font-size: 1.1rem;
+    }
+
+    #carouselExampleCaptions{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .carousel-item img{
+        height: 380px;
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        position: static;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
+        padding: 0.85rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .carousel-caption h5{
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption p{
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== Responsive: extra small phones (<=575.98px) ===== */
+@media (max-width: 575.98px) {
+    #hero-section h1{
+        font-size: 2.1rem !important;
+    }
+
+    #hero-section p{
+        font-size: 0.9rem !important;
+    }
+
+    #team .card{
+        height: 220px;
+    }
+
+    #team .card-title{
+        font-size: 2.25rem;
+    }
+
+    #team .card-text{
+        font-size: 0.8rem;
+    }
+
+    #team .card-text span{
+        font-size: 1rem;
+    }
+
+    #moments_title h2{
+        font-size: 1.75rem;
+    }
+
+    .carousel-caption{
+        padding: 0.5rem 0.75rem;
+    }
+
+    .carousel-caption h5{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .carousel-caption p{
+        display: none;
+    }
 }
