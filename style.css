@@ -5,7 +5,6 @@
     src: local('F.C. BARCELONA'), url('font/fc-barcelona-webfont/barselona.woff') format('woff');
 }
 
-
 #body{
     background-color: #070E21;
     font-family: 'F.C. BARCELONA';
@@ -497,4 +496,94 @@ footer {
     .carousel-caption p{
         display: none;
     }
+}
+
+.popover{
+    --bs-popover-max-width: 260px;
+    background: rgba(7, 14, 33, 0.92) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 0.9rem;
+    overflow: hidden;
+}
+
+.popover-header{
+    background: linear-gradient(to right, #A50044, #004D98);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    padding: 0.6rem 1rem;
+}
+
+.popover-body{
+    color: #B8C4D9 !important;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.popover-body strong{
+    color: #fff;
+}
+ 
+.popover-body .badge.bg-success{
+    background: linear-gradient(to right, #A50044, #004D98) !important;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+
+.player-card{
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.player-card:hover{
+    transform: scale(1.03);
+}
+
+.modal-content{
+    background: #070E21 !important;
+    border: 1px solid rgba(184, 196, 217, 0.2) !important;
+    border-radius: 1rem;
+}
+
+.modal-header{
+    background: linear-gradient(to right, #A50044, #004D98);
+    border: none !important;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.modal-title{
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal-body{
+    color: #B8C4D9;
+}
+
+.stat-number{
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #A50044, #004D98);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label{
+    font-size: 0.8rem;
+    color: #B8C4D9;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
