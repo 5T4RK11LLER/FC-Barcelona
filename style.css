@@ -413,6 +413,10 @@ footer {
         font-size: 1.15rem;
     }
 
+    #moments{
+        padding-top: 0.5rem;
+    }
+
     #moments_title{
         margin-top: 3rem;
         margin-left: 1rem;
