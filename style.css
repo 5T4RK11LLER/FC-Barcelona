@@ -126,10 +126,11 @@
 }
 
 #team, #moments{
-    scroll-margin-top: 90px;
+    scroll-margin-top: 1px;
 }
 
 #team{
+    padding-top: 2.5rem;
     margin-top: 5rem;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -201,6 +202,7 @@
 }
 
 #moments{
+    padding-top: 0.1rem;
     margin-bottom: 20px;
 }
 
